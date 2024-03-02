@@ -19,10 +19,14 @@ Project 1 – YouTube Data Harvesting and Warehousing using SQL, MongoDB and Str
 •	In each step to use different tools in Python certain library files should be installed in python using ‘pip install’ function. The required library files to be installed for this project are 
 
 from googleapiclient.discovery import build               # to retrieve data from youtube 
+
 import psycopg2                                           # to connect with postgre SQL
+
 import pandas as pd                                       # to use pandas function
+
 from pymongo import MongoClient                           # to connect with MongoDB
-import streamlit as st                                                     # to connect with streamlit 
+
+import streamlit as st                                    # to connect with streamlit 
 
 •	While interacting with the Streamlit UI when you give a new channel id, the data is collected and stored in the database and is visible to the user in the webpage. 
 
