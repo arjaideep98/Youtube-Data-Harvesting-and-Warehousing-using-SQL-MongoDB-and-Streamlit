@@ -1,32 +1,39 @@
-# Youtube-Data-Harvesting-and-Warehousing-using-SQL-MongoDB-and-Streamlit
+**YouTube Data Harvesting and Warehousing**
 
-Project 1 – YouTube Data Harvesting and Warehousing using SQL, MongoDB and Streamlit
+**Overview**
 
-•	The project is entirely done using Python programming and tools such as Python, SQL and MongoDB is required and should be installed in the system. 
+This project aims to develop a user-friendly Streamlit application that allows users to access and analyze data from multiple YouTube channels. The application utilizes the Google API to extract information on a YouTube channel, stores it in a MongoDB database, migrates it to a SQL data warehouse, and enables users to search for channel details and join tables to view data in the Streamlit app.
 
-•	The first step in this project is to collect data. To collect YouTube data, Youtube API key is required. API (application programming interface) key is a code used to identify and authenticate an application or user. To create a YouTube API key instructions from this webpage can be followed (https://developers.google.com/youtube/v3/getting-started).
+**Features**
 
-•	Using the YouTube API key the YouTube data such as channel information, Video information and Comments details can be collected. 
+1.	Retrieve Channel Data: Users can input a YouTube channel ID and retrieve relevant data such as channel name, subscribers, total video count, playlist ID, video ID, likes, dislikes, and comments for each video.
+2.	Store Data in MongoDB: Option to store retrieved data in a MongoDB database as a data lake for easy access and storage.
+3.	Collect Data for Multiple Channels: Ability to collect data for up to 10 different YouTube channels and store them in the MongoDB data lake by clicking a button.
+4.	Migrate Data to SQL Database: Option to select a channel name and migrate its data from the MongoDB data lake to a SQL database as tables for further analysis.
+5.	Search and Retrieve Data: Users can search and retrieve data from the SQL database using different search options, including joining tables to get channel details.
 
-•	The collected information is stored in MongoDB. MongoDB is an unstructured SQL database. All the information of each YouTube channel is stored as a file in MongoDB. 
+**Technologies Used**
 
-•	From MongoDB the data is migrated to Postgre SQL or MySQL into a Structured data in the form of tables.
+•	Streamlit: Used to build the user interface for the application.
 
-•	Till the above step everything is done in back-end which is not visible to users. For the users to interact and get the required data from the collected data, a front-end application is created using Streamlit. 
+•	Google API Client Library for Python: Used to retrieve data from the YouTube API.
 
-•	Streamlit is a web-based python code accessible front-end UI (user interface) application. Using this application the collected data is presented to the users. 
 
-•	In each step to use different tools in Python certain library files should be installed in python using ‘pip install’ function. The required library files to be installed for this project are 
+•	MongoDB: Used as a data lake to store unstructured and semi-structured data.
 
-from googleapiclient.discovery import build               # to retrieve data from youtube 
+•	SQL Database (e.g., MySQL, PostgreSQL): Used as a data warehouse to store structured data for efficient querying.
 
-import psycopg2                                           # to connect with postgre SQL
 
-import pandas as pd                                       # to use pandas function
+•	Python SQL Libraries (e.g., SQLAlchemy): Used to interact with the SQL database.
 
-from pymongo import MongoClient                           # to connect with MongoDB
+•	GitHub: Used for version control and collaboration.
 
-import streamlit as st                                    # to connect with streamlit 
+**Usage**
 
-•	While interacting with the Streamlit UI when you give a new channel id, the data is collected and stored in the database and is visible to the user in the webpage. 
-
+1.	Clone the repository to your local machine.
+2.	Install the required dependencies using pip install -r requirements.txt.
+3.	Set up the necessary API credentials for Google API.
+4.	Run the Streamlit application using streamlit run app.py.
+5.	Input a YouTube channel ID and retrieve relevant data.
+6.	Store the data in MongoDB or migrate it to a SQL database as needed.
+7.	Search and retrieve data from the SQL database using different search options.
