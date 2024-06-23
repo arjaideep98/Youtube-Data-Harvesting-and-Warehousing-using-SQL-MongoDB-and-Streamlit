@@ -8,7 +8,7 @@ This project aims to develop a user-friendly Streamlit application that allows u
 
 1.	Retrieve Channel Data: Users can input a YouTube channel ID and retrieve relevant data such as channel name, subscribers, total video count, playlist ID, video ID, likes, dislikes, and comments for each video.
 2.	Store Data in MongoDB: Option to store retrieved data in a MongoDB database as a data lake for easy access and storage.
-3.	Collect Data for Multiple Channels: Ability to collect data for up to 10 different YouTube channels and store them in the MongoDB data lake by clicking a button.
+3.	Collect Data for Multiple Channels: Ability to collect data from different YouTube channels and store them in the MongoDB data lake by clicking a button.
 4.	Migrate Data to SQL Database: Option to select a channel name and migrate its data from the MongoDB data lake to a SQL database as tables for further analysis.
 5.	Search and Retrieve Data: Users can search and retrieve data from the SQL database using different search options, including joining tables to get channel details.
 
